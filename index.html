@@ -1,1 +1,28 @@
-test
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora simples</h1>
+        <form id="calculatorForm">
+            <div>
+                <label for="inputNumero1">Número1:</label>
+                <input type="number" id="inputNumero1" required>
+            </div>
+            <div>
+                <label for="inputNumero2">Número2:</label>
+                <input type="number" id="inputNumero2" required>
+            </div>
+            <div>
+                <button type="button" onclick="calcular('+')">Somar</button>
+                <button type="button" ondblclick="calcular('-')">Subitrair</button>
+            </div>
+    </div>
+</body>
