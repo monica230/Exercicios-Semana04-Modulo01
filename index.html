@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Simples</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,15 @@
                 <input type="number" id="inputNumero2" required>
             </div>
             <div>
-                <button type="button" onclick="calcular('+')">Somar</button>
-                <button type="button" ondblclick="calcular('-')">Subitrair</button>
+                <button type="button" onclick="somar()">Somar</button>
+                <button type="button" ondblclick="subtrair()">Subtrair</button>
+                <button type="button" ondblclick="multiplicar()">multiplicar</button>
+                <button type="button" ondblclick="dividir()">dividir</button>
+            </div>
+
+            <div>
+                <p>Resultado: <span id="resultado"></span></p>
+                
             </div>
     </div>
 </body>
